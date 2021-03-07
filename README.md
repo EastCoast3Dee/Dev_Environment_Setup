@@ -102,9 +102,9 @@ to be accessed from conf/extra/httpd-vhosts.conf.
  
      <VirtualHost *:80>
      
-        DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
+      DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
         
-        ServerName examplesite.tbd
+      ServerName examplesite.tbd
         
      </VirtualHost>
      
@@ -122,16 +122,13 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 
 10. Add the following virtual host configurations for the site:
 
-    <VirtualHost *:80>
-    
-      DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
+  <VirtualHost *:80>
+  
+  DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
+  
+  ServerName newproject.tbd
       
-      ServerName newproject.tbd
-      
-    </VirtualHost>
-    
-    
-    ![Screenshot 2021-03-06 232905](https://user-images.githubusercontent.com/75577872/110230495-bee29e80-7ee7-11eb-8a79-ac221400e74a.png)
+  </VirtualHost>
 
 
 
