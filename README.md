@@ -208,6 +208,17 @@ VS16 x64 Thread Safe.
 2. Enter the following code to set up the site to respond on port 80 then automatically
 redirect to port 443 (https).
 
+```bash
+<Virtual Host *:80>
+  ServerName newproject.tbd
+  Redirect permanent / https://newproject.tbd/
+</Virtual Host>
+<Virtual Host _default_:443>
+  DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
+  ServerName newproject.tbd
+</VirtualHost>
+```
+
 
 ![Screenshot 2021-03-07 022709](https://user-images.githubusercontent.com/75577872/110231242-f7d14200-7eec-11eb-8c64-2d58215838e9.png)
 
