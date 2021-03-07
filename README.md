@@ -10,16 +10,24 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 3. Install MariaDB
 
 ## 1. Install Apache
+
 1. Download the latest version of Apache from http://httpd.apache.org/download.cgi.
 
 2. Click on the 'a number of third party vendors' link and choose the Apache Lounge option.
 
 3. For Windows 10 (64 bit), download the .exe file below Apache 2.4.46 Win64.
 
+![Screenshot 2021-03-06 150622](https://user-images.githubusercontent.com/75577872/110230390-ebe28180-7ee6-11eb-9a4c-fb2c260d36f6.png)
+
+
 4. Move the Apache24 folder to the root of the c drive. (c:/Apache24).
 
+
 ## Run and Test
+
 1. Navigate to c:\Apache24 and open a PowerShell window on the \bin folder. (shift + right click)
+
+![Screenshot 2021-03-06 154905](https://user-images.githubusercontent.com/75577872/110230401-0a487d00-7ee7-11eb-8d2b-b24179dbd92c.png)
 
 2. Enter .\httpd.exe and accept the permissions prompt.
 
@@ -29,10 +37,17 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 
 5. If properly installed and running, the page will display 'It works!'.
 
+![Screenshot 2021-03-06 155010](https://user-images.githubusercontent.com/75577872/110230408-1a605c80-7ee7-11eb-8fc2-dc2e05d061b1.png)
+
+
 6. Go back to the PowerShell window and enter CTRL + C to stop running the command.
  
+ 
 ## Register Apache as a Windows Service
+
 1. In the PowerShell window for c:\Apache24\bin, enter .\htpd.exe -k install.
+
+![Screenshot 2021-03-06 155937](https://user-images.githubusercontent.com/75577872/110230412-264c1e80-7ee7-11eb-8062-fc250f4ce953.png)
 
 2. If successful, 'The Apache 2.4 service is successfully installed' will be displayed.
 
@@ -43,7 +58,9 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 5. Optional - open the c:/Apache/bin folder and double-click on ApacheMonitor.exe to install a
 convenient icon to control Apache in the tray.
 
+
 ## Initial Config File for Apache
+
 1. Navigate to c:/Apache24/conf and open the httpd.conf file (with a text editor ex: vscode).
 
 2. Confirm Define SRVROOT is "c:/Apache24". (line 37)
@@ -59,7 +76,9 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 
 7. Restart Apache to apply the changes made.
 
+
 ## Creating Sites
+
 1.  Create a new project folder for the site in c:/Apache24/htdocs named examplesite.tbd.
 
 2.  Create an index.html file in the site folder.
@@ -73,6 +92,9 @@ to be accessed from conf/extra/httpd-vhosts.conf.
         DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
         ServerName examplesite.tbd
      </VirtualHost>
+     
+     ![Screenshot 2021-03-06 213429](https://user-images.githubusercontent.com/75577872/110230445-6ca17d80-7ee7-11eb-9b61-92796d4ef3b3.png)
+
        
 6.  Create another project folder for a second site in c:/Apache24/htdocs named newproject.tbd.
 
@@ -87,8 +109,12 @@ to be accessed from conf/extra/httpd-vhosts.conf.
       DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
       ServerName newproject.tbd
     </VirtualHost>
+    
+    ![Screenshot 2021-03-06 232905](https://user-images.githubusercontent.com/75577872/110230495-bee29e80-7ee7-11eb-8a79-ac221400e74a.png)
+
 
 ## 2. Install PHP
+
 1. Download PHP 8.0 from https://windows.php.net/download/.
 
 2. Be sure to get the correct version by checking the information on the left side of the page.
@@ -100,7 +126,9 @@ VS16 x64 Thread Safe.
 
 5. In the PHP directory, rename the file php.ini-development to php.ini.
 
+
 ## Integrate PHP with Apache
+
 1. Open php.ini in a text editor.
 
 2. Locate extension_dir (line 766) and change the path to "C:/phpApache/ext", the ext folder in the php directory.
@@ -122,9 +150,13 @@ VS16 x64 Thread Safe.
     
     PHPIniDir "C:/phpApache"
     
+    ![Screenshot 2021-03-06 213452](https://user-images.githubusercontent.com/75577872/110230474-9eb2df80-7ee7-11eb-95f6-800e0595e235.png)
+
 6. Restart Apache.
  
+ 
 ## Test PHP
+
 1. In htdocs, open the examplesite.tbd folder and create a PHP file named index.php.
 
 2. Open index.php in a text editor.
@@ -138,13 +170,27 @@ VS16 x64 Thread Safe.
 5. Open http://examplesite.tbd in the browser.
 
 6. If PHP has been successfully integrated, the PHP Version information page will be displayed in the browser.
- 
+
+![Screenshot 2021-03-06 155010](https://user-images.githubusercontent.com/75577872/110230552-31537e80-7ee8-11eb-8e95-030356b596bf.png)
+
+
+
 ## 3. Install MariaDB as database server
+
 1. Download MariaDB from https://mariadb.org/download/.
 
 2. Run the setup wizard to finish installation.
 
+
 ## Test MariaDB 
+
 1. Open Services.
 
 2. Locate MariaDB and and confirm it is running.
+
+![Screenshot 2021-03-06 214920](https://user-images.githubusercontent.com/75577872/110230490-b2f6dc80-7ee7-11eb-80d0-9897f2cb738a.png)
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+![Uploading Screenshot 2021-03-06 150622.png…]()
