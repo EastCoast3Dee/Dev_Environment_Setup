@@ -18,9 +18,6 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 
 3. For Windows 10 (64 bit), download the .exe file below Apache 2.4.46 Win64.
 
-![Screenshot 2021-03-06 150622](https://user-images.githubusercontent.com/75577872/110230390-ebe28180-7ee6-11eb-9a4c-fb2c260d36f6.png)
-
-
 4. Move the Apache24 folder to the root of the c drive. (c:/Apache24).
 
 
