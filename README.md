@@ -7,7 +7,8 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 ## Table of Contents
 1. Install Apache
 2. Install PHP
-3. Install MariaDB
+3. Configuring SSL sites
+4. Install MariaDB
 
 
 ## 1. Install Apache
@@ -200,8 +201,20 @@ VS16 x64 Thread Safe.
 
 
 
+## 3. Configuring SSL Sites
 
-## 3. Install MariaDB as database server
+1. Open c:/Apache24/config/extra and open httpd-vhosts.conf.
+
+2. Enter the following code to set up the site to respond on port 80 then automatically
+redirect to port 443 (https).
+
+
+![Screenshot 2021-03-07 022709](https://user-images.githubusercontent.com/75577872/110231242-f7d14200-7eec-11eb-8c64-2d58215838e9.png)
+
+
+
+
+## 4. Install MariaDB as database server
 
 1. Download MariaDB from https://mariadb.org/download/.
 
