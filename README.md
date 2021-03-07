@@ -99,15 +99,16 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 4.  Open c:/Apache24/config/extra and open httpd-vhosts.conf.
 
 5.  Add the following virtual host configurations for the site:
- 
-     <VirtualHost *:80>
+
+```bash 
+<VirtualHost *:80>
      
-      DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
+DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
         
-      ServerName examplesite.tbd
+ServerName examplesite.tbd
         
-     </VirtualHost>
-     
+</VirtualHost>
+```     
      
      ![Screenshot 2021-03-06 213429](https://user-images.githubusercontent.com/75577872/110230445-6ca17d80-7ee7-11eb-9b61-92796d4ef3b3.png)
 
@@ -121,14 +122,16 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 9.  Open c:/Apache24/config/extra and open httpd-vhosts.conf.
 
 10. Add the following virtual host configurations for the site:
+```bash
+<VirtualHost *:80>
 
-  <VirtualHost *:80>
-  
-  DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
-  
-  ServerName newproject.tbd
-      
-  </VirtualHost>
+DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
+
+ServerName newproject.tbd
+
+</VirtualHost>
+```
+![Screenshot 2021-03-06 232905](https://user-images.githubusercontent.com/75577872/110230922-b5a70100-7eea-11eb-9809-b882da9c5678.png)
 
 
 
