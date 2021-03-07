@@ -60,29 +60,29 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 7. Restart Apache to apply the changes made.
 
 ## Creating Sites
-1. Create a new project folder for the site in c:/Apache24/htdocs named examplesite.tbd.
+1.  Create a new project folder for the site in c:/Apache24/htdocs named examplesite.tbd.
 
-2. Create an index.html file in the site folder.
+2.  Create an index.html file in the site folder.
 
-3. Add the site name to the hosts file. 127.0.0.1 examplesite.tbd
+3.  Add the site name to the hosts file. 127.0.0.1 examplesite.tbd
 
-4. Open c:/Apache24/config/extra and open httpd-vhosts.conf.
+4.  Open c:/Apache24/config/extra and open httpd-vhosts.conf.
 
-5. Add the following virtual host configurations for the site:
-    <VirtualHost *:80>
+5.  Add the following virtual host configurations for the site:
+     <VirtualHost *:80>
         DocumentRoot "${SRVROOT}/htdocs/examplesite.tbd"
         ServerName examplesite.tbd
-    </VirtualHost>
+     </VirtualHost>
        
-6. Create another project folder for a second site in c:/Apache24/htdocs named newproject.tbd.
+6.  Create another project folder for a second site in c:/Apache24/htdocs named newproject.tbd.
 
-7. Create an index.html file in the site folder.
+7.  Create an index.html file in the site folder.
 
-8. Add the site name to the hosts file. 127.0.0.1 newproject.tbd
+8.  Add the site name to the hosts file. 127.0.0.1 newproject.tbd
 
-9. Open c:/Apache24/config/extra and open httpd-vhosts.conf.
+9.  Open c:/Apache24/config/extra and open httpd-vhosts.conf.
 
-10  Add the following virtual host configurations for the site:
+10. Add the following virtual host configurations for the site:
     <VirtualHost *:80>
       DocumentRoot "${SRVROOT}/htdocs/newproject.tbd"
       ServerName newproject.tbd
@@ -96,7 +96,7 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 3. For Windows 10 64 bit and the Apache build from Apache Lounge, download the Thread Safe version,
 VS16 x64 Thread Safe.
 
-4. Create a directory in the c drive (c:/phpApache) to extract the php files to.
+4. Create a directory in the C drive (c:/phpApache) to extract the PHP files to.
 
 5. In the PHP directory, rename the file php.ini-development to php.ini.
 
@@ -113,15 +113,19 @@ VS16 x64 Thread Safe.
     </IfModule>
     
 5. At the end of the file, specify the Apache module, php extensions, and php.ini directory to integrate PHP.
-    # PHP 8 Config
+
+    #PHP 8 Config
+    
     LoadModule php_module "c:/phpApache/php8apache2_4.dll"
+    
     AddType application/x-http-php .php
+    
     PHPIniDir "C:/phpApache"
     
 6. Restart Apache.
  
 ## Test PHP
-1. In htdocs, open the examplesite.tbd folder and create a php file named index.php.
+1. In htdocs, open the examplesite.tbd folder and create a PHP file named index.php.
 
 2. Open index.php in a text editor.
 
