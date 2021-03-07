@@ -107,7 +107,7 @@ ServerName examplesite.tbd
 </VirtualHost>
 ```     
      
-     ![Screenshot 2021-03-06 213429](https://user-images.githubusercontent.com/75577872/110230445-6ca17d80-7ee7-11eb-9b61-92796d4ef3b3.png)
+![Screenshot 2021-03-06 213429](https://user-images.githubusercontent.com/75577872/110230445-6ca17d80-7ee7-11eb-9b61-92796d4ef3b3.png)
 
        
 6.  Create another project folder for a second site in c:/Apache24/htdocs named newproject.tbd.
