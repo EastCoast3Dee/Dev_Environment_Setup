@@ -37,7 +37,7 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 
 5. If properly installed and running, the page will display 'It works!'.
 
-![Screenshot 2021-03-06 155010](https://user-images.githubusercontent.com/75577872/110230408-1a605c80-7ee7-11eb-8fc2-dc2e05d061b1.png)
+![Screenshot 2021-03-06 155010](https://user-images.githubusercontent.com/75577872/110230647-d3736680-7ee8-11eb-8dfc-d67bedd57d89.png)
 
 
 6. Go back to the PowerShell window and enter CTRL + C to stop running the command.
@@ -171,7 +171,7 @@ VS16 x64 Thread Safe.
 
 6. If PHP has been successfully integrated, the PHP Version information page will be displayed in the browser.
 
-![Screenshot 2021-03-06 155010](https://user-images.githubusercontent.com/75577872/110230552-31537e80-7ee8-11eb-8e95-030356b596bf.png)
+![Screenshot 2021-03-06 232929](https://user-images.githubusercontent.com/75577872/110230628-a1fa9b00-7ee8-11eb-8de9-36719815a1a0.png)
 
 
 
