@@ -9,6 +9,7 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 2. Install PHP
 3. Install MariaDB
 
+
 ## 1. Install Apache
 
 1. Download the latest version of Apache from http://httpd.apache.org/download.cgi.
@@ -21,6 +22,9 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 
 
 4. Move the Apache24 folder to the root of the c drive. (c:/Apache24).
+
+
+
 
 
 ## Run and Test
@@ -43,6 +47,9 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 6. Go back to the PowerShell window and enter CTRL + C to stop running the command.
  
  
+ 
+ 
+ 
 ## Register Apache as a Windows Service
 
 1. In the PowerShell window for c:\Apache24\bin, enter .\htpd.exe -k install.
@@ -57,6 +64,8 @@ Install Apache, PHP, and MariaDB to get your development environment up and runn
 
 5. Optional - open the c:/Apache/bin folder and double-click on ApacheMonitor.exe to install a
 convenient icon to control Apache in the tray.
+
+
 
 
 ## Initial Config File for Apache
@@ -75,6 +84,8 @@ to be accessed from conf/extra/httpd-vhosts.conf.
 6. Disable directory browsing by changing line 265 to Options FollowSymLinks.
 
 7. Restart Apache to apply the changes made.
+
+
 
 
 ## Creating Sites
@@ -113,6 +124,8 @@ to be accessed from conf/extra/httpd-vhosts.conf.
     ![Screenshot 2021-03-06 232905](https://user-images.githubusercontent.com/75577872/110230495-bee29e80-7ee7-11eb-8a79-ac221400e74a.png)
 
 
+
+
 ## 2. Install PHP
 
 1. Download PHP 8.0 from https://windows.php.net/download/.
@@ -125,6 +138,8 @@ VS16 x64 Thread Safe.
 4. Create a directory in the C drive (c:/phpApache) to extract the PHP files to.
 
 5. In the PHP directory, rename the file php.ini-development to php.ini.
+
+
 
 
 ## Integrate PHP with Apache
@@ -155,6 +170,8 @@ VS16 x64 Thread Safe.
 6. Restart Apache.
  
  
+ 
+ 
 ## Test PHP
 
 1. In htdocs, open the examplesite.tbd folder and create a PHP file named index.php.
@@ -175,11 +192,15 @@ VS16 x64 Thread Safe.
 
 
 
+
+
 ## 3. Install MariaDB as database server
 
 1. Download MariaDB from https://mariadb.org/download/.
 
 2. Run the setup wizard to finish installation.
+
+
 
 
 ## Test MariaDB 
@@ -191,6 +212,7 @@ VS16 x64 Thread Safe.
 ![Screenshot 2021-03-06 214920](https://user-images.githubusercontent.com/75577872/110230490-b2f6dc80-7ee7-11eb-80d0-9897f2cb738a.png)
 
 
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-![Uploading Screenshot 2021-03-06 150622.png…]()
