@@ -4,14 +4,18 @@ Install, Configure, and Maintain your own development environment.
 ## Description
 Install Apache, PHP, and MariaDB to get your development environment up and running.
 
+
 ## Table of Contents
-1. Install Apache
-2. Install PHP
-3. Configuring SSL sites
-4. Install MariaDB
+[Install Apache](#install-apache)
+
+[Install PHP](#install-php)
+
+[Configuring SSL sites](#configuring-ssl-sites)
+
+[Install MariaDB](#install-mariadb)
 
 
-## 1. Install Apache
+### Install Apache
 
 1. Download the latest version of Apache from http://httpd.apache.org/download.cgi.
 
@@ -134,7 +138,7 @@ ServerName newproject.tbd
 
 
 
-## 2. Install PHP
+### Install PHP
 
 1. Download PHP 8.0 from https://windows.php.net/download/.
 
@@ -201,7 +205,7 @@ VS16 x64 Thread Safe.
 
 
 
-## 3. Configuring SSL Sites
+### Configuring SSL Sites
 
 1. Open c:/Apache24/config/extra and open httpd-vhosts.conf.
 
@@ -225,7 +229,7 @@ redirect to port 443 (https).
 
 
 
-## 4. Install MariaDB as database server
+### Install MariaDB
 
 1. Download MariaDB from https://mariadb.org/download/.
 
